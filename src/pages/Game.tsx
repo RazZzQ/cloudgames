@@ -2,10 +2,10 @@ import {Unity, useUnityContext} from "react-unity-webgl";
 
 function Game() {
     const { unityProvider, sendMessage } = useUnityContext({
-        loaderUrl: "/UnityReact.loader.js",
-        dataUrl: "/UnityReact.data.unityweb",
-        frameworkUrl: "/UnityReact.framework.js.unityweb",
-        codeUrl: "/UnityReact.wasm.unityweb",
+        loaderUrl: "/Nueva carpeta.loader.js",
+        dataUrl: "/Nueva carpeta.data.unityweb",
+        frameworkUrl: "/Nueva carpeta.framework.js.unityweb",
+        codeUrl: "/Nueva carpeta.wasm.unityweb",
     });
 
     function handleClickSpawnEnemies() {
