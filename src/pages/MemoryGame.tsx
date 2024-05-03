@@ -1,18 +1,15 @@
 import {Unity, useUnityContext} from "react-unity-webgl";
 
-function Game() {
+function MemoryGame() {
     const { unityProvider, sendMessage } = useUnityContext({
-        loaderUrl: "/Builds.loader.js",
-        dataUrl: "/Builds.data.unityweb",
-        frameworkUrl: "/Builds.framework.js.unityweb",
-        codeUrl: "/Builds.wasm.unityweb",
+        loaderUrl: "/MemoryGame.loader.js",
+        dataUrl: "/MemoryGame.data.unityweb",
+        frameworkUrl: "/MemoryGame.framework.js.unityweb",
+        codeUrl: "/MemoryGame.wasm.unityweb",
     });
-
     function handleClickSpawnEnemies() {
         sendMessage("SceneHelper", "ReloadScene");
     }
-
-
     return (
         <>
             <div className="centered-container">
@@ -26,10 +23,7 @@ function Game() {
 
                 </div>
             </div>
-
         </>
     );
 }
-
-
-export default Game
+export default MemoryGame

@@ -15,6 +15,9 @@ function MainNav() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/Contact">Contact</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/MemoryGame">MemoryGame</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

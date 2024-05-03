@@ -6,6 +6,7 @@ import MainNav from "./common/MainNav.tsx";
 import MainFooter from "./common/MainFooter.tsx";
 import Game from "./pages/Game.tsx";
 import Contact from './pages/Contact.tsx';
+import MemoryGame from './pages/MemoryGame.tsx';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                     <Route path='/game' element={<Game/>}/>
+                    <Route path='/memoryGame' element={<MemoryGame/>}/>
                     <Route path='/Contact' element={<Contact/>}/>
                 </Routes>
                 <MainFooter />
