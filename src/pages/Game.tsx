@@ -2,10 +2,10 @@ import {Unity, useUnityContext} from "react-unity-webgl";
 
 function Game() {
     const { unityProvider, sendMessage } = useUnityContext({
-        loaderUrl: "/Nueva carpeta.loader.js",
-        dataUrl: "/Nueva carpeta.data.unityweb",
-        frameworkUrl: "/Nueva carpeta.framework.js.unityweb",
-        codeUrl: "/Nueva carpeta.wasm.unityweb",
+        loaderUrl: "/JuegoForCloud.loader.js",
+        dataUrl: "/JuegoForCloud.data.unityweb",
+        frameworkUrl: "/JuegoForCloud.framework.js.unityweb",
+        codeUrl: "/JuegoForCloud.wasm.unityweb",
     });
 
     function handleClickSpawnEnemies() {
