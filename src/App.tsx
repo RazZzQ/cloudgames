@@ -7,6 +7,7 @@ import MainFooter from "./common/MainFooter.tsx";
 import Game from "./pages/Game.tsx";
 import Contact from './pages/Contact.tsx';
 import MemoryGame from './pages/MemoryGame.tsx';
+import TopDownShooter from './pages/TopDownShooter.tsx';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path='/' element={<Home/>}/>
                     <Route path='/game' element={<Game/>}/>
                     <Route path='/memoryGame' element={<MemoryGame/>}/>
+                    <Route path='/TDS' element={<TopDownShooter/>}/>
                     <Route path='/Contact' element={<Contact/>}/>
                 </Routes>
                 <MainFooter />

@@ -18,6 +18,9 @@ function MainNav() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/MemoryGame">MemoryGame</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/TDS">TopDownShooter</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
