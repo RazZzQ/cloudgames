@@ -8,13 +8,13 @@ function TopDownShooter() {
         codeUrl: "/TopDownShooter.wasm.unityweb",
     });
     function handleClickReloadScene() {
-        sendMessage("SceneHelper", "RestartScene");
+        sendMessage("SceneManager", "RestartScene");
     }
     function handleClickSpawnEnemy() {
-        sendMessage("EnemyGenerator", "SpawnEnemyFromReact");
+        sendMessage("SpawnerEnemy", "SpawnEnemy");
     }
     function handleClickActivateDoublePoints() {
-        sendMessage("ScoreManager", "activateDoublePointsReact");
+        sendMessage("ScoreManager", "ActivateDoublePoints");
     }
     return (
         <>
