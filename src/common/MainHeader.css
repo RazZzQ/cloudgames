@@ -2,7 +2,27 @@
     background-color: var(--color1);
     color: var(--color-blanco);
 }
-
 #main-header p{
     margin-bottom: 0;
+}
+#main-header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #ffffff; /* Color del texto */
+    padding: 20px 0; /* Espacio interno superior e inferior */
+    text-align: center; /* Alineación del texto */
+}
+
+#main-header .container {
+    max-width: 960px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+#main-header h1 {
+    font-size: 36px; /* Tamaño de la fuente para el título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+#main-header p {
+    font-size: 18px; /* Tamaño de la fuente para el párrafo */
+    margin-bottom: 0; /* Elimina el espacio inferior del párrafo */
 }

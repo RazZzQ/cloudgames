@@ -1,20 +1,16 @@
 import {Unity, useUnityContext} from "react-unity-webgl";
+import { useState } from "react";
 
 function TopDownShooter() {
     const { unityProvider, sendMessage } = useUnityContext({
-        loaderUrl: "/TopDownShooter.loader.js",
-        dataUrl: "/TopDownShooter.data.unityweb",
-        frameworkUrl: "/TopDownShooter.framework.js.unityweb",
-        codeUrl: "/TopDownShooter.wasm.unityweb",
+        loaderUrl: "/ShooterTopDown.loader.js",
+        dataUrl: "/ShooterTopDown.data.unityweb",
+        frameworkUrl: "/ShooterTopDown.framework.js.unityweb",
+        codeUrl: "/ShooterTopDown.wasm.unityweb",
     });
-    function handleClickReloadScene() {
-        sendMessage("SceneManager", "RestartScene");
-    }
-    function handleClickSpawnEnemy() {
-        sendMessage("SpawnerEnemy", "SpawnEnemy");
-    }
-    function handleClickActivateDoublePoints() {
-        sendMessage("ScoreManager", "ActivateDoublePoints");
+    const [playerName, setPlayerName] = useState("");
+    function handleClickSpawnEnemies() {
+        sendMessage("SubmitManager", "Submit", playerName);
     }
     return (
         <>
@@ -24,9 +20,14 @@ function TopDownShooter() {
                     <Unity unityProvider={unityProvider} className="centered-unity" />
 
                     <div className="centered-content">
-                        <button onClick={handleClickReloadScene}>ReloadScene</button>
-                        <button onClick={handleClickSpawnEnemy}>Spawn Enemy</button>
-                        <button onClick={handleClickActivateDoublePoints}>Activate Double Points</button>
+                        <input 
+                            type="text" 
+                            placeholder="Player Name" 
+                            value={playerName} 
+                            onChange={(e) => setPlayerName(e.target.value)}
+                             
+                        />
+                        <button onClick={handleClickSpawnEnemies}>Submit Score</button>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,71 @@
+#contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+#contact-info strong {
+    font-weight: bold;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media ul li a {
+    color: #333;
+    font-size: 24px;
+}
+
+.social-media ul li a:hover {
+    color: #007bff;
+}
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre los íconos */
+}
+
+.social-media li a {
+    color: #333; /* Color del ícono */
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+.social-media li a:hover {
+    color: #007bff; /* Color al pasar el mouse */
+}

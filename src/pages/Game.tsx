@@ -1,18 +1,18 @@
 import {Unity, useUnityContext} from "react-unity-webgl";
+import { useState } from "react";
 
 function Game() {
     const { unityProvider, sendMessage } = useUnityContext({
-        loaderUrl: "/Builds.loader.js",
-        dataUrl: "/Builds.data.unityweb",
-        frameworkUrl: "/Builds.framework.js.unityweb",
-        codeUrl: "/Builds.wasm.unityweb",
+        loaderUrl: "/Shooter.loader.js",
+        dataUrl: "/Shooter.data.unityweb",
+        frameworkUrl: "/Shooter.framework.js.unityweb",
+        codeUrl: "/Shooter.wasm.unityweb",
     });
 
+    const [playerName, setPlayerName] = useState("");
     function handleClickSpawnEnemies() {
-        sendMessage("SceneHelper", "ReloadScene");
+        sendMessage("SubmitManager", "Submit", playerName);
     }
-
-
     return (
         <>
             <div className="centered-container">
@@ -21,9 +21,14 @@ function Game() {
                     <Unity unityProvider={unityProvider} className="centered-unity" />
 
                     <div className="centered-content">
-                        <button onClick={handleClickSpawnEnemies}>ReloadScene</button>
+                        <input 
+                            type="text" 
+                            placeholder="Player Name" 
+                            value={playerName} 
+                            onChange={(e) => setPlayerName(e.target.value)} 
+                        />
+                        <button onClick={handleClickSpawnEnemies}>Submit Score</button>
                     </div>
-
                 </div>
             </div>
 

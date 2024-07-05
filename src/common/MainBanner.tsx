@@ -1,6 +1,7 @@
-import banner1 from '../assets/images/banner1.jpg';
-import banner2 from '../assets/images/banner2.jpg';
-import banner3 from '../assets/images/banner3.jpg';
+import XD from '../assets/images/XD.jpg';
+import XDD from '../assets/images/XDD.jpg';
+import XDDD from '../assets/images/XDDD.jpg';
+
 function MainBanner() {
     return (
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
@@ -11,21 +12,21 @@ function MainBanner() {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={banner1} className="d-block w-100" alt="..."/>
+                    <img src={XD} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>EVE VR Online</h5>
                         <p>Amazing VR space game</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={banner2} className="d-block w-100" alt="..."/>
+                    <img src={XDD} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Virtual Reality Headset </h5>
                         <p>New VR set, no cables</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={banner3} className="d-block w-100" alt="..."/>
+                    <img src={XDDD} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Computer Cloud Gaming</h5>
                         <p>Cloud Solutions</p>
